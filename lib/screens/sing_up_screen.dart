@@ -21,14 +21,9 @@ class _SingUpScreenState extends State<SingUpScreen> {
         children: [
           Padding(
             padding: const EdgeInsets.only(top: 0),
-            child: Image.asset(
-              "assets/images/vector-2.png",
-              width: 428,
-              height: 457,
-            ),
           ),
           const SizedBox(
-            height: 18,
+            height: 50,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 50),
@@ -36,13 +31,15 @@ class _SingUpScreenState extends State<SingUpScreen> {
               textDirection: TextDirection.ltr,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text(
-                  'Sign up',
-                  style: TextStyle(
-                    color: Color(0xFF755DC1),
-                    fontSize: 27,
-                    fontFamily: 'Poppins',
-                    fontWeight: FontWeight.w500,
+                Center(
+                  child: const Text(
+                    'Sign up',
+                    style: TextStyle(
+                      color: Color(0x870B0E0D),
+                      fontSize: 27,
+                      fontFamily: 'Poppins',
+                      fontWeight: FontWeight.w500,
+                    ),
                   ),
                 ),
                 const SizedBox(
@@ -54,7 +51,7 @@ class _SingUpScreenState extends State<SingUpScreen> {
                     controller: _emailController,
                     textAlign: TextAlign.center,
                     style: const TextStyle(
-                      color: Color(0xFF393939),
+                      color: Color(0xECFF6985),
                       fontSize: 13,
                       fontFamily: 'Poppins',
                       fontWeight: FontWeight.w400,
@@ -62,7 +59,7 @@ class _SingUpScreenState extends State<SingUpScreen> {
                     decoration: const InputDecoration(
                       labelText: 'Email',
                       labelStyle: TextStyle(
-                        color: Color(0xFF755DC1),
+                        color: Color(0x870B0E0D),
                         fontSize: 15,
                         fontFamily: 'Poppins',
                         fontWeight: FontWeight.w600,
@@ -78,7 +75,7 @@ class _SingUpScreenState extends State<SingUpScreen> {
                         borderRadius: BorderRadius.all(Radius.circular(10)),
                         borderSide: BorderSide(
                           width: 1,
-                          color: Color(0xFF9F7BFF),
+                          color: Color(0x870B0E0D),
                         ),
                       ),
                     ),
@@ -97,7 +94,7 @@ class _SingUpScreenState extends State<SingUpScreen> {
                         controller: _passController,
                         textAlign: TextAlign.center,
                         style: const TextStyle(
-                          color: Color(0xFF393939),
+                          color: Color(0xECFF6985),
                           fontSize: 13,
                           fontFamily: 'Poppins',
                           fontWeight: FontWeight.w400,
@@ -106,13 +103,13 @@ class _SingUpScreenState extends State<SingUpScreen> {
                           labelText: 'Password',
                           hintText: 'Create Password',
                           hintStyle: TextStyle(
-                            color: Color(0xFF837E93),
+                            color: Color(0x870B0E0D),
                             fontSize: 10,
                             fontFamily: 'Poppins',
                             fontWeight: FontWeight.w400,
                           ),
                           labelStyle: TextStyle(
-                            color: Color(0xFF755DC1),
+                            color: Color(0x870B0E0D),
                             fontSize: 15,
                             fontFamily: 'Poppins',
                             fontWeight: FontWeight.w600,
@@ -128,24 +125,25 @@ class _SingUpScreenState extends State<SingUpScreen> {
                             borderRadius: BorderRadius.all(Radius.circular(10)),
                             borderSide: BorderSide(
                               width: 1,
-                              color: Color(0xFF9F7BFF),
+                              color: Color(0x870B0E0D),
                             ),
                           ),
                         ),
                       ),
                     ),
                     SizedBox(
-                      width: 147,
-                      height: 56,
+                      width: 130,
+                      height: 50,
                       child: TextField(
                         controller: _repassController,
                         textAlign: TextAlign.center,
                         style: const TextStyle(
-                          color: Color(0xFF393939),
+                          color: Color(0xECFF6985),
                           fontSize: 13,
                           fontFamily: 'Poppins',
                           fontWeight: FontWeight.w400,
                         ),
+
                         decoration: const InputDecoration(
                           labelText: 'Password',
                           hintText: 'Confirm Password',
@@ -156,7 +154,7 @@ class _SingUpScreenState extends State<SingUpScreen> {
                             fontWeight: FontWeight.w400,
                           ),
                           labelStyle: TextStyle(
-                            color: Color(0xFF755DC1),
+                            color: Color(0x870B0E0D),
                             fontSize: 15,
                             fontFamily: 'Poppins',
                             fontWeight: FontWeight.w600,
@@ -165,14 +163,14 @@ class _SingUpScreenState extends State<SingUpScreen> {
                             borderRadius: BorderRadius.all(Radius.circular(10)),
                             borderSide: BorderSide(
                               width: 1,
-                              color: Color(0xFF837E93),
+                              color: Color(0x870B0E0D),
                             ),
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.all(Radius.circular(10)),
                             borderSide: BorderSide(
                               width: 1,
-                              color: Color(0xFF9F7BFF),
+                              color: Color(0xECFF6985),
                             ),
                           ),
                         ),
@@ -195,14 +193,14 @@ class _SingUpScreenState extends State<SingUpScreen> {
                             curve: Curves.ease);
                       },
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFF9F7BFF),
+                        backgroundColor: const Color(0xECFF6985),
                       ),
                       child: const Text(
                         'Create account',
                         style: TextStyle(
-                          color: Colors.white,
+                          color: Color(0x870B0E0D),
                           fontSize: 15,
-                          fontFamily: 'Poppins',
+                          fontFamily: 'Bold',
                           fontWeight: FontWeight.w500,
                         ),
                       ),
@@ -214,13 +212,14 @@ class _SingUpScreenState extends State<SingUpScreen> {
                 ),
                 Row(
                   children: [
+
                     const Text(
                       ' have an account?',
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                        color: Color(0xFF837E93),
-                        fontSize: 13,
-                        fontFamily: 'Poppins',
+                        color: Color(0xFFFF6969),
+                        fontSize: 12,
+                        fontFamily: 'Bold',
                         fontWeight: FontWeight.w500,
                       ),
                     ),
@@ -229,16 +228,16 @@ class _SingUpScreenState extends State<SingUpScreen> {
                     ),
                     InkWell(
                       onTap: () {
-                        widget.controller.animateToPage(0,
+                        widget.controller.animateToPage(1,
                             duration: const Duration(milliseconds: 500),
                             curve: Curves.ease);
                       },
                       child: const Text(
                         'Log In ',
                         style: TextStyle(
-                          color: Color(0xFF755DC1),
-                          fontSize: 13,
-                          fontFamily: 'Poppins',
+                          color: Color(0xFFFFFFFF),
+                          fontSize: 12,
+                          fontFamily: 'Bold',
                           fontWeight: FontWeight.w500,
                         ),
                       ),

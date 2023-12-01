@@ -20,16 +20,8 @@ class _VerifyScreenState extends State<VerifyScreen> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Padding(
-            padding: const EdgeInsets.only(top: 13, right: 15),
-            child: Image.asset(
-              "assets/images/vector-3.png",
-              width: 428,
-              height: 457,
-            ),
-          ),
           const SizedBox(
-            height: 18,
+            height: 50,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 50),
@@ -37,13 +29,15 @@ class _VerifyScreenState extends State<VerifyScreen> {
               textDirection: TextDirection.ltr,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text(
-                  'Confirm the code\n',
-                  style: TextStyle(
-                    color: Color(0xFF755DC1),
-                    fontSize: 25,
-                    fontFamily: 'Poppins',
-                    fontWeight: FontWeight.w600,
+                Center(
+                  child: const Text(
+                    'Confirm the code\n',
+                    style: TextStyle(
+                      color: Color(0xFF755DC1),
+                      fontSize: 25,
+                      fontFamily: 'Poppins',
+                      fontWeight: FontWeight.w600,
+                    ),
                   ),
                 ),
                 const SizedBox(
@@ -54,7 +48,7 @@ class _VerifyScreenState extends State<VerifyScreen> {
                   height: 56,
                   decoration: BoxDecoration(
                     border:
-                        Border.all(width: 1, color: const Color(0xFF9F7BFF)),
+                        Border.all(width: 10, color: const Color(0xE0F4F4F8)),
                     borderRadius: const BorderRadius.all(Radius.circular(10)),
                   ),
                   child: Padding(
@@ -62,6 +56,7 @@ class _VerifyScreenState extends State<VerifyScreen> {
                     child: OtpForm(
                       callBack: (code) {
                         varifyCode = code;
+
                       },
                     ),
                   ),
@@ -77,12 +72,12 @@ class _VerifyScreenState extends State<VerifyScreen> {
                     child: ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFF9F7BFF),
+                        backgroundColor: const Color(0xECFF6985),
                       ),
                       child: const Text(
                         'confirm',
                         style: TextStyle(
-                          color: Colors.white,
+                          color: const Color(0x870B0E0D),
                           fontSize: 15,
                           fontFamily: 'Poppins',
                           fontWeight: FontWeight.w500,
@@ -102,7 +97,7 @@ class _VerifyScreenState extends State<VerifyScreen> {
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: Color(0xFF755DC1),
-                        fontSize: 13,
+                        fontSize: 15,
                         fontFamily: 'Poppins',
                         fontWeight: FontWeight.w400,
                       ),
@@ -151,7 +146,7 @@ class _VerifyScreenState extends State<VerifyScreen> {
                 'A 6-digit verification code has been sent to info@aidendesign.com',
                 style: TextStyle(
                   color: Color(0xFF837E93),
-                  fontSize: 11,
+                  fontSize: 13,
                   fontFamily: 'Poppins',
                   fontWeight: FontWeight.w400,
                 ),
